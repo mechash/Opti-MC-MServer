@@ -10,6 +10,6 @@
 # -------------------------------------------------------------------------------
 #!/bin/bash
 clear
-cd FTB-Revelation-RPi-Server/
+cd test/
 sleep 5
-java -Xms2G -Xmx3G -jar forge-1.12.2-14.23.5.2860.jar nogui
+java -Xms3G -Xmx3G -jar forge-1.12.2-14.23.5.2860.jar nogui
