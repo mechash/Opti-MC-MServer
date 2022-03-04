@@ -30,7 +30,7 @@ Because the regular Minecraft Java server is unable to execute the mods, we will
 
 ## Installation
 
-###Step 1: Setting up Raspberry Pi
+### Step 1: Setting up Raspberry Pi
 
 - Install the most recent version of Raspberry Pi Imager. 
 - Connect the SD card to an SD card reader.
@@ -41,14 +41,14 @@ Because the regular Minecraft Java server is unable to execute the mods, we will
 - Connect the SD card to Raspberry Pi and connect your USB power it should boot now
 - You have compleated this step 
 
-###Step 2: Cloning the repositoary to the home directoary
+### Step 2: Cloning the repositoary to the home directoary
 
 - Before moving forward by setting up everyting we need to the repository on Raspberry Pi
   ```md
     git clone https://github.com/mechash/Opti-MC-MServer
     ```
 
-###Step 3: Setting up java enviroment on Raspberry Pi
+### Step 3: Setting up java enviroment on Raspberry Pi
 
 - First update download information for the packages in the Raspberry Pi repository. 
   ```md
