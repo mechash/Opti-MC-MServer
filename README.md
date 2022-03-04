@@ -19,7 +19,7 @@ Because the regular Minecraft Java server is unable to execute the mods, we will
 - [Credits](#credits)
 - [License](#license)
 
-### Requrements
+## Requrements
 
 1. PC (Windows 10)
 2. RaspberryPi 3/4 4GB+ (this modpack and the server was tested on RPi 4B 4GB, if you are planning to host more than 8 players on the server use 8GB varient for best performance)
@@ -28,9 +28,9 @@ Because the regular Minecraft Java server is unable to execute the mods, we will
 5. Forge 
 6.
 
-### Installation
+## Installation
 
-Step 1: Setting up Raspberry Pi
+###Step 1: Setting up Raspberry Pi
 
 - Install the most recent version of Raspberry Pi Imager. 
 - Connect the SD card to an SD card reader.
@@ -41,6 +41,26 @@ Step 1: Setting up Raspberry Pi
 - Connect the SD card to Raspberry Pi and connect your USB power it should boot now
 - You have compleated this step 
 
+###Step 2: Cloning the repositoary to the home directoary
+
+- Before moving forward by setting up everyting we need to the repository on Raspberry Pi
+  ```md
+    git clone https://github.com/mechash/Opti-MC-MServer
+    ```
+
+###Step 3: Setting up java enviroment on Raspberry Pi
+
+- First update download information for the packages in the Raspberry Pi repository. 
+  ```md
+    sudo apt-get update 
+    ```
+- Now download and update the packages on the Raspberry Pi
+    
+  ```md
+    sudo apt-get upgrade 
+    ```
+- 
+    
 
 ### Usage
 
