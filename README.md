@@ -44,6 +44,7 @@ Because the regular Minecraft Java server is unable to execute the mods, we will
 ### Step 2: Cloning the repositoary to the home directoary
 
 - Before moving forward by setting up everyting we need to the repository on Raspberry Pi
+
   ```md
     git clone https://github.com/mechash/Opti-MC-MServer
     ```
