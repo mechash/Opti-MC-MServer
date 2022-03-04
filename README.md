@@ -38,6 +38,8 @@ Step 1: Setting up Raspberry Pi
 - Select the SD card on which you want to save your image.
 - Click on the gear icon -> Enable SSH -> add username and password -> if using wifi add SSID and password -> save
 - After you've made your selections, click the Write button to begin writing data to the SD Card.
+- Connect the SD card to Raspberry Pi and connect your USB power it should boot now
+- You have compleated this step 
 
 
 ### Usage
