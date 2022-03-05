@@ -17,7 +17,7 @@ Because the regular Minecraft Java server is unable to execute the mods, we will
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [License](#license)
+- 
 
 ## Requrements
 
@@ -30,7 +30,7 @@ Because the regular Minecraft Java server is unable to execute the mods, we will
 
 ## Installation
 
-### Step 1: Setting up Raspberry Pi
+### Step 1 : Setting up Raspberry Pi
 
 - Install the most recent version of Raspberry Pi Imager. 
 - Connect the SD card to an SD card reader.
@@ -41,15 +41,23 @@ Because the regular Minecraft Java server is unable to execute the mods, we will
 - Connect the SD card to Raspberry Pi and connect your USB power it should boot now
 - You have compleated this step 
 
-### Step 2: Cloning the repositoary to the home directoary
+### Step 2 : Connecting Raspberry Pi to your PC via command prompt
 
-- Before moving forward by setting up everyting we need to the repository on Raspberry Pi
+Open command prompt on your windows pc and login to raspberry pi via SSH using the command below
 
-  ```md
-    git clone https://github.com/mechash/Opti-MC-MServer
-    ```
+ ```md
+   ssh (rpi_username)@[rpi_ip_address]
+  ```
+  
+  for example:
+  
+   ```md
+    ssh pi@192.168.0.100
+   ```
 
-### Step 3: Setting up java enviroment on Raspberry Pi
+> Note: if you are not sure about rpi_ip_address you should login to your router admin pannel and have a look over there.
+
+### Step 3 : Update Raspberry Pi
 
 - First update download information for the packages in the Raspberry Pi repository. 
   ```md
@@ -60,8 +68,33 @@ Because the regular Minecraft Java server is unable to execute the mods, we will
   ```md
     sudo apt-get upgrade 
     ```
-- 
-    
+- Now Reboot
+
+  ```md
+    sudo reboot
+    ```
+
+### Step 4 : Cloning the repositoary to the home directoary
+
+Before moving forward by setting up everyting we need to the repository on Raspberry Pi
+
+```md
+  git clone https://github.com/mechash/Opti-MC-MServer
+  ```
+
+### Step 5 :  Setting up java enviroment on Raspberry Pi
+
+
+
+once you are connected to the raspberry pi via ssh connection lets begin 
+
+
+
+
+
+
+---
+
 
 ### Usage
 
@@ -75,17 +108,14 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
+
+
 List your collaborators, if any, with links to their GitHub profiles.
 
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 
 If you followed tutorials, include links to those here as well.
 
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
 
 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
