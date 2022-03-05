@@ -11,7 +11,7 @@ Because the regular Minecraft Java server is unable to execute the mods, we will
 
 
 
-## Table of Contents (Optional)
+## Table of Contents
 
 - [Requirement](#Requirement)
 - [Installation](#installation)
@@ -29,6 +29,8 @@ Because the regular Minecraft Java server is unable to execute the mods, we will
 6.
 
 ## Installation
+
+[Requirement](/Installation.md)
 
 ### Step 1 : Setting up Raspberry Pi
 
@@ -74,7 +76,7 @@ Open command prompt on your windows pc and login to raspberry pi via SSH using t
     sudo reboot
     ```
 
-### Step 4 : Cloning the repositoary to the home directoary
+### Step 4 : Cloning the repositoary to the raspberry pi home directoary
 
 Before moving forward by setting up everyting we need to the repository on Raspberry Pi
 
@@ -84,12 +86,18 @@ Before moving forward by setting up everyting we need to the repository on Raspb
 
 ### Step 5 :  Setting up java enviroment on Raspberry Pi
 
+After updating RPi and cloning the directory lets begin the actual work to setup the server
 
+- First change your work directoary to the one we have cloned in previous step
 
-once you are connected to the raspberry pi via ssh connection lets begin 
+  ```md
+    cd Opti-MC-MServer
+  ```
 
-
-
+- Move Java 8 ARM folder to /opt
+  ```md 
+    sudo mv Java\ 8\ ARM64/ /opt/
+  ```
 
 
 
