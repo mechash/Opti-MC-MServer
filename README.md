@@ -10,15 +10,6 @@ so make sure you get the correct version installed on both the client and server
 Because the regular Minecraft Java server is unable to execute the mods, we will need to download and install the appropriate version of Forge, which I will discuss later.
 
 
-
-## Table of Contents
-
-- [Requirement](#Requirement)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- 
-
 ## Requrements
 
 1. PC (Windows 10)
@@ -30,7 +21,7 @@ Because the regular Minecraft Java server is unable to execute the mods, we will
 
 ## Installation
 
-[Requirement](/Installation.md)
+[Installation.md](/Installation.md)
 
 ### Step 1 : Setting up Raspberry Pi
 
