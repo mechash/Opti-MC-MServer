@@ -15,7 +15,7 @@ Because the regular Minecraft Java server is unable to execute the mods, we will
 1. Desktop with Windows 10 / MAC
 2. RaspberryPi 3/4 4GB+ 
 3. Raspberry Pi OS Lite/Desktop 64-bit 
-4. jdk-8
+4. java development kit 8u321
 5. Forge installer for server 
 6. Curse Forge for client
 
