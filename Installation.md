@@ -62,8 +62,17 @@ After updating RPi and cloning the directory lets begin the actual work to setup
     cd Opti-MC-MServer
   ```
 
-- Move Java 8 ARM folder to /opt
+- Move Java 8 ARM folder to /opt and change your directory 
+
   ```md 
     sudo mv Java\ 8\ ARM64/ /opt/
+ 
+    cd /opt/Java\ 8\ ARM64/
   ```
+- Extract the content of file jdk-8u321-linux-aarch64.tar.gz 
+ 
+  ```md
+    sudo tar -zxvf jdk-8u321-linux-aarch64.tar.gz
+  ```
+
 
