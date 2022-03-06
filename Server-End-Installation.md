@@ -1,19 +1,19 @@
 ## Installation
 
-### Step 1 : Setting up Raspberry Pi
+### Step 1 : Setting up the Raspberry Pi
 
-- Install the most recent version of Raspberry Pi Imager. 
+- Install the most recent version of the Raspberry Pi Imager. 
 - Connect the SD card to an SD card reader.
-- Open Raspberry Pi Imager -> Choose OS -> Taspberry Pi OS (other) -> Raspberry Pi OS Lite (64-bit)
+- Open Raspberry Pi Imager -> Choose OS -> Raspberry Pi OS (other) -> Raspberry Pi OS Lite (64-bit)
 - Select the SD card on which you want to save your image.
-- Click on the gear icon -> Enable SSH -> add username and password -> if using wifi add SSID and password -> save
-- After you've made your selections, click the Write button to begin writing data to the SD Card.
-- Connect the SD card to Raspberry Pi and connect your USB power it should boot now
-- You have compleated this step 
+- Click on the gear icon -> Enable SSH -> add username and password -> If using wifi, add the SSID and password -> Save
+- After you've made your selections, click the "Write" button to begin writing data to the SD Card.
+- Connect the SD card to the Raspberry Pi and connect your USB power. It should boot now.
+- You have completed this step 
 
-### Step 2 : Connecting Raspberry Pi to your PC via command prompt
+### Step 2 : Connecting the Raspberry Pi to your PC via command prompt
 
-Open command prompt on your windows pc and login to raspberry pi via SSH using the command below
+Open a command prompt on your Windows PC and login to the Raspberry Pi via SSH using the command below.
 
  ```md
     ssh (rpi_username)@[rpi_ip_address]
@@ -25,7 +25,7 @@ Open command prompt on your windows pc and login to raspberry pi via SSH using t
       ssh pi@192.168.0.100
    ```
 
-> Note: if you are not sure about rpi_ip_address you should login to your router admin pannel and have a look over there.
+> Note: If you are not sure about rpi_ip_address, you should login to your router admin panel and have a look over there.
 
 ### Step 3 : Update Raspberry Pi
 
@@ -44,19 +44,19 @@ Open command prompt on your windows pc and login to raspberry pi via SSH using t
      sudo reboot
   ```
 
-### Step 4 : Cloning the repositoary to the raspberry pi home directoary
+### Step 4 : Cloning the repository to the raspberry pi home directory
 
-Before moving forward by setting up everyting we need to the repository on Raspberry Pi
+Before moving forward, by setting up everything we need for the repository on the Raspberry Pi.
 
 ```md
    git clone https://github.com/mechash/Opti-MC-MServer
 ```
 
-### Step 5 :  Setting up java enviroment on Raspberry Pi
+### Step 5 :  Setting up Java Environment on Raspberry Pi
 
-After updating RPi and cloning the directory lets begin the actual work to setup the server
+After updating RPi and cloning the directory, let's begin the actual work to set up the server.
 
-- First change your work directoary to the one we have cloned in previous step
+- First change your work directory to the one we have cloned in the previous step
 
   ```md
      cd Opti-MC-MServer
@@ -69,24 +69,24 @@ After updating RPi and cloning the directory lets begin the actual work to setup
  
      cd /opt/Java\ 8\ ARM64/
   ```
-- Extract the content of file jdk-8u321-linux-aarch64.tar.gz 
+- Extract the content of the file jdk-8u321-linux-aarch64.tar.gz 
  
   ```md
      sudo tar -zxvf jdk-8u321-linux-aarch64.tar.gz
   ```
-- setup the Java environment so that your system recognizes how to access the java binary
+- Setup the Java environment so that your system recognizes how to access the java binary
 
   ```md
      sudo update-alternatives --install /usr/bin/java java /opt/opt/Java\ 8\ ARM64/jdk-16.0.2/bin/java 1
   ```
 
-- Finally, check your version to make sure you are using the right one
+- Finally, check your version to make sure you are using the right one.
 
   ```md
      java -version
   ```
   
-  You should get someting like this
+  You should get something like this.
   
   ```md
      java version "1.8.0_321"
@@ -112,7 +112,7 @@ After updating RPi and cloning the directory lets begin the actual work to setup
   
 ### Step 7 : Run the basic Minecraft Server
 
-After completing Step 6 there will be new files in the directory. before running the Forge Server it is always a best practice to launch a standard Minecraft Server 
+After completing Step 6, there will be new files in the directory. Before running the Forge Server, it is always best practice to launch a standard Minecraft Server.
 so it will create additional files and you can see if there is any issue while running the standard server on your Raspberry Pi.
 
 To run the Minecraft server run the command stated below
@@ -120,7 +120,7 @@ To run the Minecraft server run the command stated below
 ```md
    java -Xms512M -Xmx2500M minecraft_server.1.12.2.jar nogui
 ```
-Once you have runned the command without any error the result shoul look something like this
+Once you have run the command without any errors, the result should look something like this.
 
 ```md
    pi@raspberrypi:~/Opti-MC-MServer $ java -Xms512M -Xmx2500M -jar minecraft_server.1.12.2.jar nogui
@@ -153,7 +153,7 @@ Once you have runned the command without any error the result shoul look somethi
 >    stop
 > ```
 
-once you have sucessfully stopped the server you will get the message simmilar to one shown below
+Once you have successfully stopped the server, you will get a message similar to the one shown below.
 
 ```md
    [11:35:09] [Server thread/INFO]: Stopping the server
@@ -170,7 +170,7 @@ once you have sucessfully stopped the server you will get the message simmilar t
 
 ### Step 7 : Running the Forge Minecraft Server 
 
-- First remove the generated World from the previous step
+- First, remove the generated world from the previous step.
   
   ```md
      rm -f -r world/
@@ -182,7 +182,7 @@ once you have sucessfully stopped the server you will get the message simmilar t
      java -Xms512M -Xmx3000M -jar forge-1.12.2-14.23.5.2860.jar nogui
   ```
   
-> Note : Each time we execute this command for running the forge modded server it will usually take upto 8 to 15 min to fully start 
+> Note : Each time we execute this command to run the forge modded server, it will usually take up to 8 to 15 minutes to fully start.
 
 You should get something similar when the server is up and running without any major issues 
 
@@ -200,14 +200,14 @@ You should get something similar when the server is up and running without any m
 
 ### Step 8 : Running the Server after each Reboot 
 
-If you are planing to use your Raspberry Pi only for hosting minecraft server to play with your friends you can follow this step.
+If you are planning to use your Raspberry Pi only for hosting Minecraft servers to play with your friends, you can follow this step.
 
 - Change work directory 
   
   ```md
      cd ~/Opti-MC-MServer
   ```
-- Giveing permission to the scrip
+- Giving permission to the scrip
 
   ```md 
   sudo chmod +x mc-server.sh
@@ -221,7 +221,7 @@ If you are planing to use your Raspberry Pi only for hosting minecraft server to
        sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
     ```
   
-    > You will find few command in this script like this
+    > You will find a few commands in this script like this:
     > ```md
     >    @lxpanel --profile LXDE-pi
     >    @pcmanfm --desktop --profile LXDE-pi
