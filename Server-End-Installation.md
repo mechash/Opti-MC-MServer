@@ -97,6 +97,7 @@ After updating RPi and cloning the directory lets begin the actual work to setup
 ### Step 6 : Forge Server Installation
 
 - Change work directory 
+
   ```md
      cd ~/Opti-MC-MServer
   ```
@@ -144,5 +145,111 @@ Once you have runned the command without any error the result shoul look somethi
    [06:38:17] [Server thread/INFO]: Done (41.369s)! For help, type "help" or "?"
    [06:38:21] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4104ms behind, skipping 82 tick(s)
 ```
+> To stop the server type stop as shown bellow 
+> ```md 
+>    [06:38:16] [Server thread/INFO]: Preparing spawn area: 95%
+>    [06:38:17] [Server thread/INFO]: Done (41.369s)! For help, type "help" or "?"
+>    [06:38:21] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4104ms behind, skipping 82 tick(s)
+>    stop
+> ```
+
+once you have sucessfully stopped the server you will get the message simmilar to one shown below
+
+```md
+   [11:35:09] [Server thread/INFO]: Stopping the server
+   [11:35:09] [Server thread/INFO]: Stopping server
+   [11:35:09] [Server thread/INFO]: Saving players
+   [11:35:09] [Server thread/INFO]: Saving worlds
+   [11:35:09] [Server thread/INFO]: Saving chunks for level 'world'/overworld
+   [11:35:09] [Server thread/INFO]: Saving chunks for level 'world'/the_nether
+   [11:35:09] [Server thread/INFO]: Saving chunks for level 'world'/the_end
+   [11:35:09] [Server Shutdown Thread/INFO]: Stopping server
+   [11:35:09] [Server Shutdown Thread/INFO]: Saving players
+   [11:35:09] [Server Shutdown Thread/INFO]: Saving worlds
+```
+
+### Step 7 : Running the Forge Minecraft Server 
+
+- First remove the generated World from the previous step
+  
+  ```md
+     rm -f -r world/
+  ```
+  
+- Now run the forge-1.12.2-14.23.5.2860.jar like shown below 
+ 
+  ```md
+     java -Xms512M -Xmx3000M -jar forge-1.12.2-14.23.5.2860.jar nogui
+  ```
+  
+> Note : Each time we execute this command for running the forge modded server it will usually take upto 8 to 15 min to fully start 
+
+You should get something similar when the server is up and running without any major issues 
+
+```md
+   [11:08:47] [Server thread/INFO] [minecraft/AdvancementList]: Loaded 886 advancements
+   [11:08:48] [Server thread/INFO] [FTB Library]: Reloaded server in 42ms
+   [11:08:48] [Server thread/INFO] [FTB Utilities]: Overridden 144 commands
+   [11:08:49] [Server thread/INFO] [Astral Sorcery]: Load CachedWorldData 'lightnetwork' for world 0
+   [11:08:49] [Server thread/INFO] [Astral Sorcery]: Loading of 'lightnetwork' for world 0 finished.
+   [11:08:50] [Server thread/INFO] [FML]: Unloading dimension -1
+   [11:08:50] [Server thread/INFO] [FML]: Unloading dimension 1
+   [11:08:50] [Server thread/INFO] [FML]: Unloading dimension 7
+   [11:08:55] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 5004ms behind, skipping 100 tick(s)
+```
+
+### Step 8 : Running the Server after each Reboot 
+
+If you are planing to use your Raspberry Pi only for hosting minecraft server to play with your friends you can follow this step.
+
+- Change work directory 
+  
+  ```md
+     cd ~/Opti-MC-MServer
+  ```
+- Giveing permission to the scrip
+
+  ```md 
+  sudo chmod +x mc-server.sh
+  ```
+
+- Adding the script to the LXDE Startup session
+  
+  - Edit the autostart script 
+
+    ```md
+       sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+    ```
+  
+    > You will find few command in this script like this
+    > ```md
+    >    @lxpanel --profile LXDE-pi
+    >    @pcmanfm --desktop --profile LXDE-pi
+    > ```
+  
+  - Now add this line of text after @pcmanfm --************* on the next line
+  
+    ```md
+       @lxterminal --command="/home/pi/Opti-MC-MServer/mc-server.sh
+    ```
+  
+- Hurry!!! you are all set and done, now reboot and test the server
+  
+  ```md
+     sudo reboot 
+  ```
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
