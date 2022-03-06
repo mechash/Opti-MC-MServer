@@ -27,12 +27,10 @@ Because the regular Minecraft Java server is unable to execute the mods, we will
 
 ## Installation
 
-[Server-End-Installation.md](/Server-End-Installation.md)
+Manually installing each and every componed saverately will be a very leanthy and complicated process.
+To make it easiear to install the java enviroment, forge and the modpack using this repositoary on the server end I have stated the steps in this file [Server-End-Installation.md](/Server-End-Installation.md)
 
-[Client-End-Installation.md](/Client-End-Installation.md)
-
-
-
+Once you have conpleated the installation on minecraft server on Raspberry Pi you have to install the same modpack on the client end. So that you and your friends can connect to the server and play minecraf. The steps for installing this modpack is stated in this file [Client-End-Installation.md](/Client-End-Installation.md) 
 
 ## Usage
 
