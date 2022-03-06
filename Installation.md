@@ -93,3 +93,56 @@ After updating RPi and cloning the directory lets begin the actual work to setup
      Java(TM) SE Runtime Environment (build 1.8.0_321-b07)
      Java HotSpot(TM) 64-Bit Server VM (build 25.321-b07, mixed mode)  
   ```
+
+### Step 6 : Forge Server Installation
+
+- Change work directory 
+  ```md
+     cd ~/Opti-MC-MServer
+  ```
+  
+- Run the forge installer file with the --installServer flag.
+
+  ```md
+     java -jar forge-1.12.2-14.23.5.2860-installer.jar --installServer
+  ```
+  
+  This will take a bit of time and will create new files
+  
+### Step 7 : Run the basic Minecraft Server
+
+After completing Step 6 there will be new files in the directory. before running the Forge Server it is always a best practice to launch a standard Minecraft Server 
+so it will create additional files and you can see if there is any issue while running the standard server on your Raspberry Pi.
+
+To run the Minecraft server run the command stated below
+
+```md
+   java -Xms512M -Xmx2500M minecraft_server.1.12.2.jar nogui
+```
+Once you have runned the command without any error the result shoul look something like this
+
+```md
+   pi@raspberrypi:~/Opti-MC-MServer $ java -Xms512M -Xmx2500M -jar minecraft_server.1.12.2.jar nogui
+   [06:37:35] [Server thread/INFO]: Starting minecraft server version 1.12.2
+   [06:37:35] [Server thread/INFO]: Loading properties
+   [06:37:35] [Server thread/INFO]: Default game type: SURVIVAL
+   [06:37:35] [Server thread/INFO]: Generating keypair
+   [06:37:35] [Server thread/INFO]: Starting Minecraft server on *:25565
+   [06:37:35] [Server thread/INFO]: Using default channel type
+   [06:37:35] [Server thread/INFO]: Preparing level "world"
+   [06:37:38] [Server thread/INFO]: Preparing start region for level 0
+   [06:37:39] [Server thread/INFO]: Preparing spawn area: 4%
+   [06:37:40] [Server thread/INFO]: Preparing spawn area: 6%
+   [06:37:49] [Server thread/INFO]: Preparing spawn area: 16%
+   [06:37:53] [Server thread/INFO]: Preparing spawn area: 25%
+   [06:38:00] [Server thread/INFO]: Preparing spawn area: 33%
+   [06:38:05] [Server thread/INFO]: Preparing spawn area: 51%
+   [06:38:09] [Server thread/INFO]: Preparing spawn area: 68%
+   [06:38:13] [Server thread/INFO]: Preparing spawn area: 85%
+   [06:38:15] [Server thread/INFO]: Preparing spawn area: 92%
+   [06:38:16] [Server thread/INFO]: Preparing spawn area: 95%
+   [06:38:17] [Server thread/INFO]: Done (41.369s)! For help, type "help" or "?"
+   [06:38:21] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4104ms behind, skipping 82 tick(s)
+```
+  
+  
