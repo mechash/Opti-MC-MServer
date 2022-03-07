@@ -239,7 +239,9 @@ If you are planning to use your Raspberry Pi only for hosting Minecraft servers 
      sudo reboot 
   ```
   
+  ---
   
+  ### For Client End Installation of this ModPack, please follow the steps stated in [Client-End-Installation.md](/Client-End-Installation.md) 
   
   
   
