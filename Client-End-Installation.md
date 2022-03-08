@@ -38,7 +38,7 @@ Follow the flow to setup the new custom profile for the ModPack
 
 ---
 
-### Please follow the step mentioned in readme.md under the usage section for 
+### Please follow the step mentioned in `readme.md` under the `usage` section for 
  
  - How to connect the client to the server
  
