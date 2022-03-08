@@ -28,7 +28,7 @@ Follow the flow to setup the new custom profile for the ModPack
 
 - Now go into the mods folder this folder should be empty (to add any mods we have to add the mod file into this folder) 
   
-- So to add mods to the Minecraft we will download the contents from the `Client-End-Mods` from this repository if you are not able to find it here is the [link](https://github.com/mechash/Opti-MC-MServer/Client-End-Mods/)
+- So to add mods to Minecraft we will download the contents from the `Client-End-Mods` from this repository if you are not able to find it here is the [link](https://github.com/mechash/Opti-MC-MServer/Client-End-Mods/)
 
 - Once you have added the files into the folder you can close the file explorer and go back to the Cures Forge launcher
 
