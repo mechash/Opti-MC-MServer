@@ -34,7 +34,29 @@ Once you have conpleated the installation on minecraft server on Raspberry Pi yo
 
 ## Usage
 
+If you want to start the server on each reboot please follow the instruction in the [Server-End-Installation.md](/Server-End-Installation.md)
 
+To start the server manually you can follow the steps mentioned bellow :
+
+```md
+   java -Xms512M -Xmx3000M -jar forge-1.12.2-14.23.5.2860.jar nogui
+```
+
+> If you want to allocate all the available memory to the server you can do soo by changing the values in the `-Xms` and `-Xmx` parameter.
+>
+> `Xms` paramater defines the minimum memory allocation to the java runtime (for example: `-Xms215M` this will give 215 Megabyte of minimum memory allocation or `-Xms1G` this will give a 1 Gigabyte of minimum memory allocation)
+>
+> `Xmx` paramater defines the maximum memory allocation to the java runtime (for example: `-Xms215M` this will give 215 Megabyte of maximum memory allocation or `-Xms1G` this will give a 1 Gigabyte of maximum memory allocation)
+
+Now, there might the question that how to add more mods to the Server and to the Client end?
+
+The answer is simple, Once you have setup and made your first run of your server and client. 
+
+> For adding any new mods to the server make sure you are not running the forge server on the Raspberry Pi and same goes for the client end 
+
+Hou have to get into the Opti-MC-MServer directory on server end and locate the mods folder and get your self into the mods folder and paste or download the new mod file in this directory
+
+Once you have copleated the above step you have to do the same for the client end. you can follow the Step 3 in [Client-End-Installation.md](/Client-End-Installation.md) 
 
 ## Credits
 
