@@ -58,7 +58,7 @@ Hou have to get into the Opti-MC-MServer directory on server end and locate the 
 
 Once you have copleated the above step you have to do the same for the client end. you can follow the Step 3 in [Client-End-Installation.md](/Client-End-Installation.md) 
 
-## Credits
+
 
 
 ## Contributing
